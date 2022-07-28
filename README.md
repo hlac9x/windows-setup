@@ -1,7 +1,8 @@
-# Automated macOS workstation set up
-Forks from https://github.com/khuedoan/macos-setup.git
+# Automated Windows workstation set up
+
 ## Features
 
+- Install Windows Subsystem Linux
 - Install Homebrew
 - Install CLI and GUI packages
 
@@ -11,13 +12,19 @@ Forks from https://github.com/khuedoan/macos-setup.git
 
 ## Usage
 
-Clone this repository
+Download this repository
 
-Uncomment ansible role in main.yml
+Open powershell with run as administrator
+
+```sh
+.\wsl.ps1
+```
+
+Wait for the WSL installation complete after restart
+
+Open terminal with Ubuntu
 
 and Run the playbook
 ```sh
 make [function]
 ```
-
-.\init.ps1 
