@@ -4,9 +4,7 @@ apps:
   - azure-cli
   - bash
   - bat
-  - cask
   - coreutils
-  - font-meslo-lg-nerd-font
   - fzf
   - git
   - gh
@@ -18,7 +16,7 @@ apps:
   - kubectl
   - kubectx
   - kustomize
-  - m1-terraform-provider-helper
+  - kreuzwerker/taps/m1-terraform-provider-helper
   - moreutils
   - python
   - ripgrep

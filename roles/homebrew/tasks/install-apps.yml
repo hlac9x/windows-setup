@@ -4,11 +4,13 @@
     state: present
   become: no
 
+- name: Brew unlink terraform
+  ansible.builtin.shell:
+    cmd: brew unlink terraform  
+
 - name: Install applications
   homebrew:
     name: '{{ item }}'
     state: latest
   with_items: '{{ apps }}'
   become: no
-  # notify:
-  # - restart dock

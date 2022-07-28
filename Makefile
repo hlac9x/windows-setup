@@ -7,7 +7,7 @@ init:
 		&& . .venv/bin/activate \
 		&& pip3 install --upgrade pip \
 		&& pip3 install -r requirements.txt \
-		&& ansible-galaxy install -r requirements.yml -vvv
+		&& ansible-galaxy install -r requirements.yml
 
 /tmp/brew-install.sh:
 	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh > /tmp/brew-install.sh
@@ -21,8 +21,9 @@ run: /usr/local/bin/brew
 	. .venv/bin/activate \
 		&& ansible-playbook --ask-become-pass --inventory hosts.ini main.yml  
 
-install:
-		ansible-playbook --ask-become-pass --inventory hosts.ini main.yml  
+install: 
+	. .venv/bin/activate \
+		&& ansible-playbook --ask-become-pass --inventory hosts.ini main.yml  
 
 dotfiles:
 	. .venv/bin/activate \
