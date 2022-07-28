@@ -1,0 +1,10 @@
+- name: Install packages
+  homebrew:
+    name:
+      - lastpass-cli
+
+- name: Install casks
+  homebrew_cask:
+    name:
+      - lastpass
+      - viscosity

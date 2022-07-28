@@ -1,0 +1,31 @@
+
+apps:
+  - awscli
+  - azure-cli
+  - bash
+  - bat
+  - cask
+  - coreutils
+  - font-meslo-lg-nerd-font
+  - fzf
+  - git
+  - gh
+  - go
+  - gpg
+  - grep
+  - kubernetes-helm
+  - jq
+  - kubectl
+  - kubectx
+  - kustomize
+  - m1-terraform-provider-helper
+  - moreutils
+  - python
+  - ripgrep
+  - terraform
+  - tfenv
+  - translate-shell
+  - tree
+  - wget
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
