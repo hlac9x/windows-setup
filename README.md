@@ -22,7 +22,7 @@ Open powershell with run as administrator
 
 Wait for the WSL installation complete after restart
 
-Open terminal with Ubuntu
+Open terminal with Ubuntu (WSL)
 
 and Run the playbook
 ```sh
