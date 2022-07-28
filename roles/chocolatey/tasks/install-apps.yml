@@ -1,0 +1,6 @@
+---
+- name: Install Applications from Chocolatey
+  win_chocolatey:
+    name: '{{ item }}'
+  with_items: '{{ apps }}'
+  become: no

@@ -1,7 +1,0 @@
----
-- name: Install Applications from Homebrew Cask
-  homebrew_cask:
-    name: '{{ item }}'
-    options: force
-  with_items: '{{ apps }}'
-  become: no

@@ -25,6 +25,10 @@ install:
 	. .venv/bin/activate \
 		&& ansible-playbook --ask-become-pass --inventory hosts.ini main.yml  
 
+winlocal: 
+	. .venv/bin/activate \
+		&& ansible-playbook --inventory hosts.ini --limit windows11.local main.yml  
+
 dotfiles:
 	. .venv/bin/activate \
 		&& ansible-playbook --inventory hosts.ini --tags dotfiles main.yml   

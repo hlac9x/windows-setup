@@ -1,3 +1,7 @@
-- hosts: all
+- hosts: localhost
   roles:
     - role: homebrew
+
+- hosts: winlocal
+  roles:
+    - role: chocolatey
