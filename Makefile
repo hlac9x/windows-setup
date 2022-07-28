@@ -27,7 +27,7 @@ install:
 
 winlocal: 
 	. .venv/bin/activate \
-		&& ansible-playbook --inventory hosts.ini --limit windows11.local main.yml  
+		&& ansible-playbook --inventory hosts.ini --limit windows11.local main.yml -vvv
 
 dotfiles:
 	. .venv/bin/activate \

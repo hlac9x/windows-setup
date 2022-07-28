@@ -1,7 +1,7 @@
 ---
 
 apps:
-  - 1password
+  - chocolatey
   # - 1password-cli
   # - cloudflare-warp
   # - docker

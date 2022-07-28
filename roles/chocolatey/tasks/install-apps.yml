@@ -1,6 +1,9 @@
 ---
 - name: Install Applications from Chocolatey
-  win_chocolatey:
+  chocolatey.chocolatey.win_chocolatey:
     name: '{{ item }}'
-  with_items: '{{ apps }}'
-  become: no
+    state: latest
+  loop: '{{ apps }}'
+  # become: yes
+  # become_user: cloud_user
+  # become_method: runas
