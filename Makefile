@@ -7,11 +7,12 @@ init:
 		&& . .venv/bin/activate \
 		&& pip3 install --upgrade pip \
 		&& pip3 install -r requirements.txt \
-		# && ansible-galaxy install -r requirements.yml
+		&& ansible-galaxy install -r requirements.yml -vvv
 
 /tmp/brew-install.sh:
 	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh > /tmp/brew-install.sh
 	chmod +x /tmp/brew-install.sh
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 /usr/local/bin/brew: /tmp/brew-install.sh
 	bash -c /tmp/brew-install.sh

@@ -29,3 +29,18 @@ apps:
   - wget
   - zsh-autosuggestions
   - zsh-syntax-highlighting
+
+homebrew_paths:
+  - /Library/Caches/Homebrew
+  - /usr/local/bin
+  - /usr/local/Caskroom
+  - /usr/local/Cellar
+  - /usr/local/etc
+  - /usr/local/include
+  - /usr/local/Homebrew
+  - /usr/local/opt
+  - /usr/local/sbin
+  - /usr/local/share
+  - /usr/local/var
+  - /usr/local/bin/brew
+  - /opt/homebrew/bin/brew
