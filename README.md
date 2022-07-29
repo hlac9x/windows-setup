@@ -17,14 +17,17 @@ Download this repository
 Open powershell with run as administrator
 
 ```sh
-.\wsl.ps1
+PS C:\> Set-ExecutionPolicy unrestricted
+PS C:\> .\wsl.ps1
 ```
 
 Wait for the WSL installation complete after restart
+
 
 Open terminal with Ubuntu (WSL)
 
 and Run the playbook
 ```sh
+./wsl.sh
 make [function]
 ```
